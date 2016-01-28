@@ -42,3 +42,10 @@ CREATE TABLE HORARIOS (ID_HORARIO INTEGER,
                        CONSTRAINT PK_ID_HORARIO PRIMARY KEY(ID_HORARIO),
         CONSTRAINT FK1_ID_PELICULA FOREIGN KEY(ID_PELICULA) REFERENCES PELICULA(ID_PELICULA)
         );
+
+        CREATE SEQUENCE sec_pelicula
+        start with 1
+        increment by 1
+        nomaxvalue;
+        
+        
