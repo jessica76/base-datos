@@ -59,3 +59,8 @@ CREATE TABLE HORARIOS (ID_HORARIO INTERGER,
                       CONSTRAINT FK1_ID_PELICULA FOREIGN KEY (ID_PELICULA) REFERENCES PELICULA(ID_PELICULA)
                       );
               
+
+        CREATE SEQUENCE sec_pelicula
+        start with 1
+        increment by 1
+        nomaxvalue;
